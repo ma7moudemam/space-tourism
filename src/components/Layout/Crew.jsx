@@ -1,4 +1,4 @@
-import React ,{useState}from 'react'
+import React ,{Fragment, useState}from 'react'
 import data from './../../data.json'
 import classes from './Crew.module.css';
 
@@ -11,8 +11,9 @@ const Crew = () => {
 
     const {name ,images ,role, bio } = crews[crew];
   return (
+    <Fragment>
     <div className={classes.crew}>
-     
+      
       <div className={classes.content}>
         <h1> <span>02</span> meeting your crew</h1>
         <h3>{role}</h3>
@@ -29,6 +30,7 @@ const Crew = () => {
       <img src={images.png} alt={name} />
       </div>
     </div>
+    </Fragment>
   )
 }
 

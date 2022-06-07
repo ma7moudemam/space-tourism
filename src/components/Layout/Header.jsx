@@ -13,7 +13,7 @@ const Header = () => {
             <div className={classes.links}>
                 <ul>
                     <li>
-                        <Link to='/home'>
+                        <Link to='/'>
                         <span>00</span> HOME
                         </Link>
                     </li>
